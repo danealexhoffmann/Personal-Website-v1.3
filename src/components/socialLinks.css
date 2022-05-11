@@ -7,3 +7,10 @@
   color: #ff0a54;
   transition: 01s;
 }
+
+@media only screen and (min-width: 3840px) {
+  .icon {
+    font-size: 7rem;
+    margin: 2rem 2rem 0;
+  }
+}

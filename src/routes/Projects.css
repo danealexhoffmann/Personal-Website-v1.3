@@ -96,6 +96,46 @@
   margin-bottom: 2rem;
 }
 
+@media only screen and (min-width: 3840px) {
+  .projects-title {
+    margin-top: 17rem;
+    font-size: 10rem;
+  }
+
+  .card {
+    width: 40rem;
+    height: 70rem;
+    margin-left: 21.2rem;
+  }
+
+  .project-name {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+
+  .project-description {
+    font-size: 2.2rem;
+  }
+
+  .project-button {
+    font-size: 2.4rem;
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .portfolio-description {
+    margin-bottom: 16rem;
+  }
+
+  .planner-description {
+    margin-bottom: 12.7rem;
+  }
+
+  .dashboard-description {
+    margin-bottom: 6.5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .projects-container {
     display: grid;

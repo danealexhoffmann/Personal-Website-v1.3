@@ -30,6 +30,19 @@
   transition: 1s;
 }
 
+@media only screen and (min-width: 3840px) {
+  .contact-title {
+    margin-top: 17rem;
+    font-size: 10rem;
+  }
+
+  .contact-email {
+    font-size: 136pt;
+    margin-top: 24rem;
+    margin-bottom: 20rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .contact-email {
     font-size: 30pt;

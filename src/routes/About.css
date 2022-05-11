@@ -50,6 +50,31 @@
   padding: 1rem 1rem;
 }
 
+@media only screen and (min-width: 3840px) {
+  .profile {
+    margin-top: 19.4rem;
+    margin-left: 50rem;
+    width: 47.5rem;
+    border-radius: 20px;
+  }
+
+  .about-title {
+    margin-top: 17rem;
+    font-size: 10rem;
+  }
+
+  .about-subtext {
+    font-size: 4rem;
+    margin-right: 50rem;
+    margin-bottom: 7.6rem;
+  }
+
+  #resume {
+    font-size: 2.4rem;
+    padding: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about-container {
     display: grid;

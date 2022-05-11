@@ -2,7 +2,7 @@
 
 .navbar {
   background-color: #252525;
-  height: 80px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +68,16 @@
 
 .nav-icon {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    font-size: 2.5rem;
+  }
+
+  .nav-links {
+    padding: 0.5rem 13rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
