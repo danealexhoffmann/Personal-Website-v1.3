@@ -1,0 +1,48 @@
+.home-container {
+  background-color: #e9e4de;
+  font-family: "clash display", sans-serif;
+  align-items: center;
+}
+
+.home-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-title {
+  width: 55%;
+  margin: auto;
+  text-align: left;
+  color: #252525;
+  font-size: 12rem;
+  line-height: 11rem;
+  font-weight: 900;
+  margin-top: 10rem;
+}
+
+.home-subtext {
+  color: #252525;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-title {
+    font-size: 8rem;
+    width: 89%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home-title {
+    font-size: 4rem;
+    width: 90%;
+    line-height: 4rem;
+  }
+
+  .home-subtext {
+    font-size: 1rem;
+  }
+}

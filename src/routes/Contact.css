@@ -1,0 +1,50 @@
+.contact-container {
+  background-color: #e9e4de;
+}
+
+.contact-title {
+  text-align: left;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  margin-left: 10.6rem;
+  color: #252525;
+  font-family: "clash display", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.contact-email {
+  text-align: center;
+  color: #252525;
+  font-family: "satoshi", sans-serif;
+  font-weight: 900;
+  font-size: 68pt;
+  text-decoration: none;
+  display: block;
+  margin-top: 12rem;
+  margin-bottom: 14rem;
+}
+
+.contact-email:hover {
+  color: #ff0a54;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-email {
+    font-size: 30pt;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-title {
+    font-size: 3rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+
+  .contact-email {
+    font-size: 15pt;
+    margin-bottom: 9rem;
+  }
+}

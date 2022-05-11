@@ -1,0 +1,135 @@
+.projects-container {
+  background-color: #e9e4de;
+  display: grid;
+  grid-template-rows: 0.45fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title-container title-container title-container"
+    "cards-container cards-container cards-container";
+}
+
+.title-container {
+  grid-area: title-container;
+}
+
+.projects-title {
+  text-align: left;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  margin-left: 10.6rem;
+  color: #252525;
+  font-family: "clash display", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.cards-container {
+  grid-area: cards-container;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "one two three";
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.card {
+  background-color: #ff0a54;
+  border-radius: 20px;
+  width: 20rem;
+  height: 32rem;
+  margin-left: 10.6rem;
+}
+
+.screenshot {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.project-name {
+  color: #e9e4de;
+  font-family: "satoshi", sans-serif;
+  margin-top: 2rem;
+}
+
+.project-description {
+  color: #e9e4de;
+  font-family: "satoshi", sans-serif;
+  text-align: left;
+  margin: 0 1.5rem 0 1.8rem;
+}
+
+.project-button {
+  background-color: #252525;
+  border-style: none;
+  border-radius: 10px;
+  color: #e9e4de;
+  font-family: "clash display", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  margin: 1rem;
+}
+
+.portfolio-description {
+  margin-bottom: 6rem;
+}
+
+.planner-description {
+  margin-bottom: 4.7rem;
+}
+
+.dashboard-description {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      "title container"
+      "grid-container";
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+
+  .title-container {
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .projects-title {
+    font-size: 3rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+}

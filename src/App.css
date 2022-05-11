@@ -1,38 +1,25 @@
-.App {
+@import url("https://api.fontshare.com/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&f[]=clash-display@200,300,400,500,600,700,1&display=swap");
+
+.appContainer {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 0.09fr 1fr 0.05fr;
+  grid-template-areas:
+    "navbar"
+    "routes"
+    "footer";
   text-align: center;
+  grid-row-gap: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navbar {
+  grid-area: navbar;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#routes {
+  grid-area: routes;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer {
+  grid-area: footer;
 }

@@ -1,0 +1,9 @@
+.icon {
+  color: #252525;
+  margin: 1.5rem 1rem 0;
+}
+
+.icon:hover {
+  color: #ff0a54;
+  transition: 01s;
+}

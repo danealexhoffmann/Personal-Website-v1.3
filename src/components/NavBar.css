@@ -1,0 +1,127 @@
+@import url("https://api.fontshare.com/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&f[]=clash-display@200,300,400,500,600,700,1&display=swap");
+
+.navbar {
+  background-color: #252525;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 15000px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #e9e4de;
+  font-family: "clash display", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 7rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-links:hover {
+  color: #ff0a54;
+  transition: 1s;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: height 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  color: #ff0a54;
+}
+
+.nav-item .active {
+  color: #ff0a54;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #252525;
+    position: absolute;
+    top: 3rem;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #252525;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: #ff0a54;
+  }
+  .nav-links {
+    padding: 2rem 0rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 10rem;
+    cursor: pointer;
+    color: #ff0a54;
+  }
+
+  .navButton {
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-menu.active {
+    padding-left: 0;
+  }
+}
