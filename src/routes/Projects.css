@@ -136,7 +136,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .projects-container {
     display: grid;
     grid-template-columns: none;
@@ -160,6 +160,12 @@
     margin-bottom: 3rem;
   }
 
+  .projects-title {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
   .card {
     margin: auto;
     margin-bottom: 5rem;
@@ -169,6 +175,14 @@
 @media only screen and (max-width: 375px) {
   .projects-title {
     font-size: 3rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .projects-title {
+    font-size: 4rem;
     margin: 2rem 0 0 0;
     text-align: center;
   }

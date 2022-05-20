@@ -49,7 +49,31 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .contact-title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .contact-email {
+    font-size: 40pt;
+  }
+}
+
 @media only screen and (max-width: 375px) {
+  .contact-title {
+    font-size: 3rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+
+  .contact-email {
+    font-size: 15pt;
+    margin-bottom: 9rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
   .contact-title {
     font-size: 3rem;
     margin: 2rem 0 0 0;
