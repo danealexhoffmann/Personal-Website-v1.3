@@ -29,7 +29,7 @@ const Projects = () => {
           </a>
           <a
             class="project-button"
-            href="https://github.com/danealexhoffmann/Personal-Website"
+            href="https://github.com/danealexhoffmann/Personal-Website-v1.3"
           >
             GitHub
           </a>
