@@ -72,12 +72,12 @@ const Projects = () => {
             coversion calculations, see how a certian currency is peforming in
             the market and see the latest news headlines in the crypto space.
           </p>
-          <a
+          {/* <a
             class="project-button"
             href="https://cryptodailydashboard.netlify.app/"
           >
             Live Demo
-          </a>
+          </a> */}
           <a
             class="project-button"
             href="https://github.com/danealexhoffmann/Crypto-Dashboard"
