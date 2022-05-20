@@ -6,12 +6,16 @@
 
 .home-content {
   width: 100%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
+.home-title-container {
+  display: inline-block;
+}
+
 .home-title {
-  width: 55%;
   margin: auto;
   text-align: left;
   color: #252525;
@@ -41,17 +45,37 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .home-title {
     font-size: 8rem;
-    width: 89%;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .home-title {
     font-size: 4rem;
-    width: 90%;
+    line-height: 4rem;
+  }
+
+  .home-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .home-title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .home-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .home-title {
+    font-size: 4rem;
     line-height: 4rem;
   }
 
