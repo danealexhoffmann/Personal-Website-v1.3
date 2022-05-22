@@ -2,7 +2,11 @@
   background-color: #e9e4de;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
-  grid-template-areas: "image-div text-div";
+  grid-template-rows: 1.1fr 1fr;
+  grid-template-areas:
+    "image-div text-div"
+    "skills-div skills-div"
+    "projects-btn-div projects-btn-div";
 }
 
 .image-div {
@@ -12,6 +16,10 @@
 .text-div {
   grid-area: text-div;
   text-align: left;
+}
+
+.skills-div {
+  grid-area: skills-div;
 }
 
 .profile {
@@ -50,6 +58,66 @@
   padding: 1rem 1rem;
 }
 
+.skills-title {
+  margin-bottom: 0;
+  color: #252525;
+  font-family: "clash display", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.skills-list-one {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.skills-list-two {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.skills-item {
+  float: left;
+}
+
+.skill-icon {
+  width: 5rem;
+}
+
+.projects-btn-div {
+  margin: 0 auto;
+  grid-area: projects-btn-div;
+}
+
+.projects-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-decoration: none;
+}
+
+.projects-page {
+  background-color: #252525;
+  border-style: none;
+  border-radius: 10px;
+  color: #e9e4de;
+  font-family: "clash display", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
 @media only screen and (min-width: 3840px) {
   .profile {
     margin-top: 19.4rem;
@@ -78,11 +146,13 @@
 @media only screen and (max-width: 1024px) {
   .about-container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1fr 1fr;
     grid-template-columns: none;
     grid-template-areas:
       "text-div"
-      "image-div";
+      "image-div"
+      "skills-div"
+      "projects-btn-div";
   }
 
   .text-div {
@@ -106,6 +176,14 @@
   .profile {
     margin: 5rem 0 0 0;
     width: 15rem;
+  }
+
+  .skills-title {
+    font-size: 3rem;
+  }
+
+  .skill-icon {
+    width: 6rem;
   }
 }
 
